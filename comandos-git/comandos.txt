@@ -1,0 +1,265 @@
+git config --global user.name "kauasilvasodre"
+git config --global user.email seu@730email.com
+git config --global alias.cm commit
+git config --global alias.ck checkout
+git config --global alias.st status
+git config --global alias.ps push
+git config --global alias.pl pull
+git config --global alias.br branch
+git config --global alias.cm commit
+git config --global alias.ck checkout
+git config --global alias.st status
+git config --global alias.ps push
+git config --global alias.pl pull
+git config --global alias.br branch
+git commit -m "Descrição das modificações"
+git commit -am "Descrição das modificações"
+git init
+git clone [url]
+git add [file]
+git commit -m "[mensagem]"
+git status
+git push
+git pull
+git fetch
+git branch
+git checkout [branch]
+git merge [branch]
+git log
+git reset [file]
+git init: Inicializa um novo repositório Git.
+git clone [url]: Clona um repositório Git existente para o seu diretório local.
+git add [file]: Adiciona um arquivo específico ao índice (staging area).
+git add .: Adiciona todos os arquivos alterados ao índice.
+git commit -m "[mensagem]": Cria um novo commit com os arquivos no índice e uma mensagem descritiva.
+git status: Exibe o estado atual do repositório, incluindo arquivos modificados, adicionados ou removidos.
+git push: Envia commits locais para um repositório remoto.
+git pull: Obtém e mescla alterações do repositório remoto para o repositório local.
+git branch: Lista todas as branches locais.
+git branch [branch]: Cria uma nova branch.
+git checkout [branch]: Muda para uma branch específica.
+git checkout -b [branch]: Cria uma nova branch e muda para ela.
+git merge [branch]: Mescla uma branch específica na branch atual.
+git remote -v: Lista os repositórios remotos configurados.
+git remote add [nome] [url]: Adiciona um novo repositório remoto.
+git remote rm [nome]: Remove um repositório remoto.
+git fetch [nome-remoto]: Obtém as últimas alterações de um repositório remoto, mas não as mescla com o repositório local.
+git log: Exibe o histórico de commits.
+git log --oneline: Exibe o histórico de commits em uma única linha.
+git diff: Exibe as diferenças entre os arquivos no diretório de trabalho e o índice.
+git diff [commit]: Exibe as diferenças entre o commit especificado e o diretório de trabalho.
+git diff [branch1] [branch2]: Exibe as diferenças entre duas branches.
+git reset [file]: Remove um arquivo do índice (staging area), mantendo as alterações no diretório de trabalho.
+git reset --hard: Reseta o HEAD e o diretório de trabalho para o estado de um commit específico.
+git revert [commit]: Desfaz um commit específico, criando um novo commit que reverte as alterações.
+git tag [tagname]: Cria uma nova tag para o commit atual.
+git tag -a [tagname] -m "[mensagem]": Cria uma nova tag anotada.
+git tag: Lista todas as tags.
+git push --tags: Envia todas as tags locais para o repositório remoto.
+git fetch --tags: Obtém todas as tags do repositório remoto.
+git cherry-pick [commit]: Aplica as alterações de um commit específico na branch atual.
+git stash: Salva temporariamente as alterações locais.
+git stash list: Lista todas as stashes salvas.
+git stash apply: Aplica a última stash salva.
+git stash pop: Aplica e remove a última stash salva.
+git stash drop: Remove a última stash salva.
+git rebase [branch]: Reaplica os commits da branch atual sobre a branch especificada.
+git rebase -i [commit]: Permite reorganizar, editar ou remover commits interativamente.
+git bisect: Ajuda a identificar o commit que introduziu um determinado problema.
+git config --global user.name "[nome]": Configura o nome de usuário global do Git.
+git config --global user.email "[email]": Configura o e-mail global do Git.
+git config --global alias.[nome-alias] "[comando-original]": Cria um alias para um comando Git.
+git log --author="[nome]": Exibe o histórico de commits de um autor específico.
+git log --grep="[padrão]": Exibe o histórico de commits que correspondem a um padrão específico.
+git log --oneline --graph --decorate: Exibe o histórico de commits de forma concisa e gráfica.
+git clean -n: Lista os arquivos não rastreados que seriam removidos com git clean -f.
+git clean -f: Remove os arquivos não rastreados do diretório de trabalho.
+git blame [arquivo]: Mostra quem modificou cada linha de um arquivo e em qual commit.
+git reflog: Exibe o log de referências, mostrando todos os commits que foram referenciados no repositório.
+git submodule
+git remote add origin [url]: Adiciona um repositório remoto chamado "origin" com a URL especificada.
+git push -u origin [branch]: Envia os commits locais para o repositório remoto "origin" na branch especificada, configurando a branch local para rastrear a branch remota.
+git pull origin [branch]: Obtém e mescla alterações do repositório remoto "origin" para a branch local especificada.
+git push origin --delete [branch]: Exclui uma branch remota do repositório "origin".
+git branch -d [branch]: Exclui uma branch local.
+git checkout -b [branch]: Cria uma nova branch e muda para ela.
+git tag [tagname]: Cria uma tag para o commit atual.
+git tag -a [tagname] -m "[mensagem]": Cria uma tag anotada, associando uma mensagem ao tag.
+git push --tags: Envia todas as tags locais para o repositório remoto.
+git pull --tags: Obtém todas as tags do repositório remoto.
+git fetch origin [branch]: Obtém as últimas alterações do repositório remoto "origin" para a branch local especificada.
+git merge origin/[branch]: Mescla uma branch remota na branch local atual.
+git diff [commit1] [commit2]: Exibe as diferenças entre dois commits.
+git blame [file]: Mostra quem modificou cada linha de um arquivo e em qual commit.
+git stash: Salva as mudanças locais em um local temporário, permitindo alternar rapidamente entre branches ou commits.
+git stash list: Lista todas as stashs salvas.
+git stash apply: Aplica a última stash salva sem removê-la da lista.
+git stash pop: Aplica e remove a última stash salva.
+git stash drop: Remove a última stash salva.
+git rebase [branch]: Reorganiza os commits da branch atual sobre a branch especificada.
+git rebase -i [commit]: Permite reorganizar, editar ou remover commits interativamente.
+git cherry-pick [commit]: Aplica as alterações de um commit específico na branch atual.
+git config --global user.name "[nome]": Configura o nome de usuário global do Git.
+git config --global user.email "[email]": Configura o e-mail global do Git.
+git config --global alias.[nome-alias] "[comando-original]": Cria um alias para um comando Git.
+git log --author="[nome]": Exibe o histórico de commits de um autor específico.
+git log --grep="[padrão]": Exibe o histórico de commits que correspondem a um padrão específico.
+git log --oneline --graph --decorate: Exibe o histórico de commits de forma concisa e gráfica.
+git clean -n: Lista os arquivos não rastreados que seriam removidos com git clean -f.
+git clean -f: Remove os arquivos não rastreados do diretório de trabalho.
+git reflog: Exibe o log de referências, mostrando todos os commits que foram referenciados no repositório.
+git submodule: Gerencia repositórios dentro de repositórios (submódulos).
+git log --since="[data]": Exibe o histórico de commits desde a data especificada.
+git log --until="[data]": Exibe o histórico de commits até a data especificada.
+git log --after="[data]": Exibe o histórico de commits feitos após a data especificada.
+git log --before="[data]": Exibe o histórico de commits feitos antes da data especificada.
+git log --format=[formato]: Personaliza o formato de exibição do histórico de commits.
+git show [commit]: Exibe as alterações introduzidas por um commit específico.
+git show --name-only [commit]: Exibe apenas os nomes dos arquivos modificados por um commit específico.
+git show --stat [commit]: Exibe estatísticas resumidas das alterações introduzidas por um commit específico.
+git archive --format=[formato] [branch]: Exporta os arquivos de uma branch como um arquivo compactado em um formato específico.
+git revert --no-commit [commit]: Desfaz as alterações introduzidas por um commit específico, mas não cria um novo commit.
+git bisect start: Inicia o processo de bissecção para encontrar o commit que introduziu um determinado problema.
+git bisect good [commit]: Marca um commit como "bom" durante o processo de bissecção.
+git bisect bad [commit]: Marca um commit como "ruim" durante o processo de bissecção.
+git bisect reset: Reinicia o processo de bissecção e retorna para o estado original.
+git shortlog: Exibe um resumo do histórico de commits, agrupados por autor.
+git shortlog -sn: Exibe um resumo do histórico de commits, mostrando apenas o número de commits por autor.
+git shortlog -e: Exibe um resumo do histórico de commits, mostrando os endereços de e-mail dos autores.
+git shortlog -sn --no-merges
+git fsck: Verifica a integridade do banco de dados do Git e relata qualquer problema encontrado.
+git cat-file: Exibe o conteúdo de objetos Git em formatos específicos.
+git prune: Remove objetos não referenciados do banco de dados do Git.
+git repack: Compacta objetos Git em um único arquivo para melhorar o desempenho.
+git gc: Coleta lixo no repositório Git, consolidando e otimizando os objetos do banco de dados.
+git notes: Adiciona ou lê notas associadas a objetos Git, geralmente usadas para adicionar anotações a commits sem modificá-los.
+git bundle: Cria um único arquivo que contém todos os objetos Git e referências de um repositório, útil para transferência de repositórios compactados.
+git reflog expire: Limpa entradas antigas do log de referências, reduzindo o tamanho do repositório.
+git rerere: Reutiliza resoluções de conflitos anteriores, automatizando a resolução de conflitos semelhantes no futuro.
+git filter-branch: Reescreve o histórico do projeto, permitindo modificar commits antigos, reescrever mensagens de commit, remover arquivos etc.
+git instaweb: Inicia um servidor web embutido para visualização rápida do repositório no navegador.
+git send-email: Envia patches Git por e-mail.
+git svn: Fornece uma interface bidirecional entre um repositório Git e um repositório Subversion (SVN).
+git subtree: Permite trabalhar com subárvores diretamente em um repositório Git, sem a necessidade de repositórios separados.
+git worktree:
+git anime
+git acesso luffy
+git os "desenho" --ça
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
